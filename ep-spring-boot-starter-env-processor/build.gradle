@@ -1,0 +1,16 @@
+apply plugin: 'maven-publish'
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter:2.7.5"
+}
+
+repositories {
+    mavenLocal()
+}
+
+
+jar {
+    manifest {
+        attributes("Organization": "XXX", "Artifact": project.description, "Implementation-Version": project.version)
+    }
+}

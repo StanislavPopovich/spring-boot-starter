@@ -1,0 +1,34 @@
+plugins {
+	id 'java'
+	id "application"
+	id "com.jfrog.artifactory" version "4.28.0"
+	id "maven-publish"
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation "org.springframework.boot:spring-boot-starter:2.7.5"
+}
+
+jar {
+	manifest {
+		attributes("Organization": "Enterprise-Parcel", "Artifact": description, "Implementation-Version": version)
+	}
+
+}
+
+processResources {
+    filesMatching('**/*.properties') {
+        expand project.properties
+    }
+}
+
+java {
+	withSourcesJar()
+}

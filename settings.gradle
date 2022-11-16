@@ -1,0 +1,3 @@
+include 'ep-spring-boot-starter-env-processors'
+
+rootProject.name = 'spring-boot-starter'

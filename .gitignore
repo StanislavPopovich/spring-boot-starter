@@ -1,0 +1,37 @@
+CHANGELOG.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!ep-spring-boot-starter-env-processor/src1/main/**/build/
+!ep-spring-boot-starter-env-processor/src1/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!ep-spring-boot-starter-env-processor/src1/main/**/bin/
+!ep-spring-boot-starter-env-processor/src1/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!ep-spring-boot-starter-env-processor/src1/main/**/out/
+!ep-spring-boot-starter-env-processor/src1/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
